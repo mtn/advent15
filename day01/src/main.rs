@@ -32,7 +32,7 @@ fn part2() -> std::io::Result<i32> {
         }
 
         if floor == -1 {
-            return Ok((i + 1) as i32)
+            return Ok((i + 1) as i32);
         }
     }
 

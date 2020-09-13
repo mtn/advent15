@@ -6,5 +6,10 @@ stdenv.mkDerivation rec {
   buildInputs = [
     cargo
     rustc
+    rustfmt
   ];
+
+  shellHook = ''
+    export PATH=/home/mtn/.cargo/bin:$PATH
+  '';
 }
